@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub User Creation Date</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h1 class="h4 mb-0">GitHub User Creation Date</h1>
+          </div>
+          <div class="card-body">
+            <form id="github-user-r8s2" class="mb-3">
+              <div class="mb-3">
+                <label for="github-username" class="form-label">GitHub Username</label>
+                <input 
+                  type="text" 
+                  id="github-username" 
+                  class="form-control" 
+                  placeholder="Enter GitHub username" 
+                  required 
+                  aria-describedby="username-help"
+                >
+                <div id="username-help" class="form-text">
+                  Enter a valid GitHub username to fetch account creation date
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Fetch Creation Date</button>
+            </form>
+            
+            <div id="result-container" class="mt-4">
+              <h2 class="h5">Account Creation Date</h2>
+              <div id="github-created-at" class="alert alert-info" role="alert">
+                Enter a username and submit to see the creation date
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
